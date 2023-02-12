@@ -21,13 +21,15 @@ setuptools.setup(
         "optuna",
         "krovetzstemmer",
         "pystemmer==2.0.1",
-        "cyhunspell",
         "unidecode",
         "scikit-learn",
         "ranx",
         "indxr",
         "oneliner_utils",
     ],
+    extras_require={
+        "cyhunspell": ["cyhunspell"],
+    },
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
